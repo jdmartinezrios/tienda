@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <div class="col-md-4 col-sm-6" ng-repeat="item in vm.productos">
+        <div class="thumbnail">
+         <img src="../../assets/images/yeoman.png" alt="...">
+         <div class="caption">
+           <h3>{{item.nombre}}</h3>
+           <p><button ng-click="vm.seleccionarProducto(item)" class="btn btn-primary" role="button">Add</button></p>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="" ng-repeat="item in vm.carrito track by $index">
+        Producto: {{item.nombre}}
+      </div>
+      <div class="">
+        Total: {{vm.total}}<br>
+      </div>
+      <div class="">
+        cantidad : {{vm.cantidad}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="col-md-12">
+			<h2>Formulario</h2>
+			<form name="formAlquiler" ng-submit="vm.hacerInventario()">
+				
+				<div class="form-group">
+					<label for="">nombre artiulo</label>
+					<input type="text" class="form-control" ng-model="vm.articuloInventario.nombreArticulo">
+				</div>
+				<div class="form-group">
+					<label for="">valor del articulo</label>
+					<input type="num" class="form-control" ng-model="vm.articuloInventario.valor">
+				</div>
+				<div class="form-group">
+					<label for="">descipcion</label>
+					<input type="text" class="form-control" ng-model="vm.articuloInventario.descripcion">
+				</div>
+				<button class="btn btn-success" type="sumbit">Guardar</button>
+			</form>
+		</div>
