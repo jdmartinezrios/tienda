@@ -15,6 +15,7 @@
         },
         {
           id:2,
+          cantidad:0,
           nombre:'tarjeta ATX',
           marca:'AMD',
           valor:300.000,
@@ -22,13 +23,15 @@
         },
         {
           id:3,
+          cantidad:0,
           nombre:'iphone x',
-          marca:'apple',
+          marca:'APPLE',
           valor:2800000,
           decuento:0
         },
         {
           id:4,
+          cantidad:0,
           nombre:'nevera LG',
           marca:'LG',
           valor:11000000,
@@ -42,14 +45,15 @@
       console.log(this.saludo);
     }
     seleccionarProducto(item){
+      $('#modalProducto').modal('show');
       this.carrito.push(item);
       this.contador1 = 0;
       this.cantidadP = 0;
       for(var i = 0; i < this.carrito.length; i++){
         this.contador1 += this.carrito[i].valor;
         if(item.id === this.carrito[i].id){
-          this.carrito[i].cantidad += 1;
-          this.cantidad = this.carrito[i].cantidad;
+          this.cantidadP += 1;
+          this.cantidad = this.cantidadP;
         }
         }
         this.total = this.contador1;
